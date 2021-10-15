@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/tempMcr/static/css/main.a617e044.chunk.css",
+    "main.js": "/tempMcr/static/js/main.256ef14c.chunk.js",
+    "main.js.map": "/tempMcr/static/js/main.256ef14c.chunk.js.map",
+    "runtime-main.js": "/tempMcr/static/js/runtime-main.fc1475e4.js",
+    "runtime-main.js.map": "/tempMcr/static/js/runtime-main.fc1475e4.js.map",
+    "static/js/2.b98f5f51.chunk.js": "/tempMcr/static/js/2.b98f5f51.chunk.js",
+    "static/js/2.b98f5f51.chunk.js.map": "/tempMcr/static/js/2.b98f5f51.chunk.js.map",
+    "static/js/3.a58f5969.chunk.js": "/tempMcr/static/js/3.a58f5969.chunk.js",
+    "static/js/3.a58f5969.chunk.js.map": "/tempMcr/static/js/3.a58f5969.chunk.js.map",
+    "index.html": "/tempMcr/index.html",
+    "static/css/main.a617e044.chunk.css.map": "/tempMcr/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.b98f5f51.chunk.js.LICENSE.txt": "/tempMcr/static/js/2.b98f5f51.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fc1475e4.js",
+    "static/js/2.b98f5f51.chunk.js",
+    "static/css/main.a617e044.chunk.css",
+    "static/js/main.256ef14c.chunk.js"
+  ]
+}
