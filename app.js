@@ -13,13 +13,12 @@ app.get('/', (req, res) => {
   res.sendFile(__dirname + '/pages/index.html');
 });
 
-app.get('/playlists', (req, res) => {
-  res.sendFile(__dirname + '/pages/playlists.html');
-});
-
-// Social
 app.get('/registro', (req, res) => {
   res.sendFile(__dirname + '/pages/registro.html');
+});
+
+app.get('/playlists', (req, res) => {
+  res.sendFile(__dirname + '/pages/playlists.html');
 });
 
 app.get('/insta', (req, res) => {
