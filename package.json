@@ -1,0 +1,30 @@
+{
+  "name": "react-deploy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EstebanVargas10/typTest01.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EstebanVargas10/typTest01/issues"
+  },
+  "homepage": "https://musicadecostarica.com/",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "gh-pages": "^3.2.3",
+    "git-rev-sync": "^3.0.1",
+    "node-fetch": "^3.0.0",
+    "nodemon": "^2.0.12"
+  }
+}
