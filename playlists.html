@@ -1,159 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <style>
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-
-      html {
-        height: 100%;
-      }
-
-      body {
-        padding: 2rem;
-        font-family: 'Rubik', sans-serif;
-
-        background-color: #f6f6f6;
-        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1443' height='800' preserveAspectRatio='none' viewBox='0 0 1443 800'%3e%3cg mask='url(%26quot%3b%23SvgjsMask2790%26quot%3b)' fill='none'%3e%3crect width='1443' height='800' x='0' y='0' fill='url(%23SvgjsLinearGradient2791)'%3e%3c/rect%3e%3cpath d='M16 800L816 0L1527 0L727 800z' fill='url(%23SvgjsLinearGradient2792)'%3e%3c/path%3e%3cpath d='M569.19 800L1369.19 0L1780.19 0L980.19 800z' fill='url(%23SvgjsLinearGradient2792)'%3e%3c/path%3e%3cpath d='M1380 800L580 0L476.5 0L1276.5 800z' fill='url(%23SvgjsLinearGradient2793)'%3e%3c/path%3e%3cpath d='M937.81 800L137.80999999999995 0L29.809999999999945 0L829.81 800z' fill='url(%23SvgjsLinearGradient2793)'%3e%3c/path%3e%3cpath d='M991.6375213728925 800L1443 348.6375213728924L1443 800z' fill='url(%23SvgjsLinearGradient2792)'%3e%3c/path%3e%3cpath d='M0 800L451.3624786271076 800L 0 348.6375213728924z' fill='url(%23SvgjsLinearGradient2793)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask2790'%3e%3crect width='1443' height='800' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='88.86%25' y1='120.09%25' x2='11.14%25' y2='-20.09%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient2791'%3e%3cstop stop-color='rgba(16%2c 58%2c 101%2c 1)' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(0%2c 90%2c 207%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='0%25' y1='100%25' x2='100%25' y2='0%25' id='SvgjsLinearGradient2792'%3e%3cstop stop-color='rgba(23%2c 160%2c 224%2c 0.91)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='rgba(23%2c 160%2c 224%2c 0.91)' offset='0.66'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='100%25' y1='100%25' x2='0%25' y2='0%25' id='SvgjsLinearGradient2793'%3e%3cstop stop-color='rgba(23%2c 160%2c 224%2c 0.91)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='rgba(23%2c 160%2c 224%2c 0.91)' offset='0.66'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
-        /* background by SVGBackgrounds.com | https://bgjar.com/ */
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center;
-
-        color: #181d25;
-        min-height: 100%;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
-
-      img {
-        /* width: 120px;
-        height: 120px; */
-        width: 200px; /* you can use % */
-        height: auto;
-        border-radius: 50%;
-        margin-bottom: 2.5rem;
-        border: 3px solid #f6f6f6;
-        box-shadow: 0px 16px 40px rgba(63, 191, 191, 0.8);
-        box-sizing: content-box;
-      }
-
-      header {
-        margin-bottom: 3rem;
-        text-align: center;
-      }
-
-      header p {
-        font-weight: 300;
-        font-size: 1.25rem;
-        margin-bottom: 0.25rem;
-        color: #525252;
-      }
-
-      header h1 {
-        font-weight: 700;
-        font-size: 2rem;
-        line-height: 85%;
-        color: #f6f6f6;
-      }
-
-      nav {
-        width: 100%;
-        display: block;
-        max-width: 380px;
-      }
-
-      ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-      }
-
-      a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-
-        padding: 0.75rem;
-        margin-bottom: 1rem;
-        border-radius: 8px;
-
-        text-align: center;
-        text-decoration: none;
-        font-weight: 500;
-        font-size: 1.25rem;
-        color: #fff;
-
-        box-shadow: 0px 0.5rem 1.5rem -0.25rem var(--link-color);
-        background-color: var(--link-color);
-
-        transition: box-shadow 0.5s;
-      }
-
-      a:hover {
-        box-shadow: 0px 0.5rem 1.5rem 0rem var(--link-color);
-      }
-
-      i {
-        margin-right: 0.5rem;
-        font-size: 1.5rem;
-      }
-
-      #linkedin {
-        --link-color: #0e76a8;
-      }
-
-      #spotify {
-        --link-color: #ff820d;
-      }
-
-      #lo_nuevo_de_la_finca {
-        --link-color: #0084ff;
-      }
-      #apple_music {
-        --link-color: #fc3c44;
-      }
-
-      #github {
-        --link-color: #24292e;
-      }
-
-      #instagram {
-        --link-color: #e1206c;
-      }
-
-      #email {
-        --link-color: #e1203a;
-      }
-
-      #youtube {
-        --link-color: #ff0000;
-      }
-
-      #twitter {
-        --link-color: #1da1f2;
-      }
-
-      #new-song {
-        --link-color: #f644ff;
-      }
-
-      #portfolio {
-        --link-color: #673ab7;
-      }
-
-      #blog {
-        --link-color: #673ab7;
-      }
-    </style>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Google tag (gtag.js) -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-CB3SFX8E2D"
@@ -167,79 +15,17 @@
 
       gtag('config', 'G-CB3SFX8E2D');
     </script>
-    <!-- END OF Global site tag (gtag.js) - Google Analytics -->
+    <!-- End of Google Analytics -->
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#00BCD4" />
-    <title>Música de Costa Rica - Playlists</title>
-
-    <meta name="description" content="Playlists - Música de Costa Rica | MCR" />
-
-    <meta itemprop="name" content="MusicaDeCostaRica" />
-    <meta itemprop="description" content="Playlists - Música de Costa Rica" />
-    <meta itemprop="image" content="" />
-
-    <meta property="og:title" content="Playlists - Música de Costa Rica" />
     <meta
-      property="og:description"
-      content="Playlists - Música de Costa Rica"
+      http-equiv="refresh"
+      content="1; url = https://open.spotify.com/user/ywx7pox2u66fndlcz0m5ttybq/playlists "
     />
-    <meta property="og:site_name" content="MusicaDeCostaRica" />
-    <meta property="og:url" content="https://MusicaDeCostaRica.com" />
-    <meta property="og:type" content="website" />
-    <!-- <meta
-      property="og:image"
-      content="https://i.scdn.co/image/ab6761610000e5eb26627295bd906fb1ef803646"
-    /> -->
-    <meta property="og:image:type" content="image/jpeg" />
-    <!-- <meta property="og:image:width" content="700" />
-    <meta property="og:image:height" content="700" /> -->
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
-      crossorigin="anonymous"
-    />
-    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <title>Música de Costa Rica - Playlists</title>
   </head>
-  <body>
-    <!-- <img
-      src="https://i.scdn.co/image/ab6761610000e5eb26627295bd906fb1ef803646"
-      alt="Música de Costa Rica"
-    /> -->
 
-    <header>
-      <h1>Playlists</h1>
-    </header>
-
-    <nav>
-      <ul>
-        <li id="spotify">
-          <a href="https://open.spotify.com/playlist/7v6ZLmMp9NPbhRpW3ufVel">
-            <i class="fab fa-spotify"></i>
-            Canciones Ticas de Aniversario
-          </a>
-        </li>
-        <li id="lo_nuevo_de_la_finca">
-          <a href="https://open.spotify.com/playlist/0LmVvNn217ZWeRGZn23DAH">
-            <i class="fab fa-spotify"></i>
-            Lo Nuevo de la Finca
-          </a>
-        </li>
-        <!-- <li id="lo_nuevo_de_la_finca">
-          <a href="https://open.spotify.com/playlist/0LmVvNn217ZWeRGZn23DAH">
-            <i class="fab fa-spotify"></i>
-            Lo Nuevo de la Finca
-          </a>
-        </li> -->
-      </ul>
-    </nav>
-  </body>
+  <body></body>
 </html>
