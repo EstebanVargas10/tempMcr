@@ -41,6 +41,14 @@ app.get('/sinpe', (req, res) => {
   res.sendFile(__dirname + '/pages/sinpe.html');
 });
 
+app.get('/tiktok', (req, res) => {
+  res.sendFile(__dirname + '/pages/tiktok.html');
+});
+
+app.get('/contacto', (req, res) => {
+  res.sendFile(__dirname + '/pages/contacto.html');
+});
+
 // 404
 app.all('*', (req, res) => {
   res.sendFile(__dirname + '/pages/index.html');
